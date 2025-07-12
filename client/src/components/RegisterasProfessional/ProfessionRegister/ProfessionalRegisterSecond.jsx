@@ -43,7 +43,7 @@ function ProfessionalRegisterSecond(props) {
         // console.log(data);
 
         const response = await fetch(
-            `${process.env.REACT_APP_BACKEND_API}/api/handyman/signup/verify`,
+            `http://localhost:5000/api/handyman/signup/verify`,
             {
                 method: "POST",
                 headers: {
@@ -78,7 +78,7 @@ function ProfessionalRegisterSecond(props) {
         try {
             // Send a request to the backend to resend the OTP
             const response = await fetch(
-                `${process.env.REACT_APP_BACKEND_API}/api/user/signup/resendOtp`,
+                `http://localhost:5000/api/user/signup/resendOtp`,
                 {
                     method: "POST",
                     headers: {
@@ -167,13 +167,13 @@ function ProfessionalRegisterSecond(props) {
                                 setSelected={setSelected}
                             />
                         </div>
-                        <div className="signup_form_input">
+                        {/* <div className="signup_form_input">
                             <input
                                 type="string"
                                 placeholder="Profile URL"
                                 onChange={(e) => setProfile(e.target.value)}
                             />
-                        </div>
+                        </div> */}
                         <div className="signup_form_input">
                             <input
                                 type="text"

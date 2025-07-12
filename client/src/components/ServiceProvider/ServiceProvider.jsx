@@ -15,7 +15,7 @@ function ServiceProvider() {
     useEffect(() => {
         const fetchHandymen = async () => {
             await fetch(
-                `${process.env.REACT_APP_BACKEND_API}/api/handyman/getallhandyman`
+                `http://localhost:5000/api/handyman/getallhandyman`
             )
                 .then((response) => response.json())
                 .then((handymen) => setHandymen(handymen));
@@ -68,8 +68,8 @@ function ServiceProvider() {
             <div className="container">
                 <div className="serviceProvider_inner">
                     <div className="serviceProvider_heading">
-                        <h1>Maids near your location</h1>
-                        <p>Choose one to proceed for the booking</p>
+                        <h1> near your location</h1>
+                        <p>Choose one to as for exchange </p>
                     </div>
                     {sortedHandymen?.map((Provider) => (
                         <ServicePerson

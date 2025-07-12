@@ -11,7 +11,7 @@ function HandymanProfile() {
     useEffect(() => {
         const fetchHandyman = async () => {
             const response = await fetch(
-                `${process.env.REACT_APP_BACKEND_API}/api/handyman/gethandyman`,
+                `http://localhost:5000/api/handyman/gethandyman`,
                 {
                     method: "POST",
                     headers: {
@@ -54,7 +54,7 @@ function HandymanProfile() {
                             <div className="handyman_details handyman_phone">
                                 Phone Number: +91 {handymanData?.phone}
                             </div>
-                            <div className="handyman_details handyman_occupation">
+                            {/* <div className="handyman_details handyman_occupation">
                                 Occupation: {handymanData?.services}
                             </div>
                             <div className="handyman_details handyman_address">
@@ -62,7 +62,7 @@ function HandymanProfile() {
                             </div>
                             <div className="handyman_details handyman_dob">
                                 Joined on: {handymanData?.createdAt?.slice(0, 10)}
-                            </div>
+                            </div> */}
                         </div>
                     </div>
                 </div>

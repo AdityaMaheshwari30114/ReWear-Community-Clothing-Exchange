@@ -9,7 +9,7 @@ function OneClick() {
   return (
     <div className="oneclick_main">
       <div className="container oneclick">
-        <div className="oneclick_heading">One Click can solve your problem</div>
+        <div className="oneclick_heading">One Click can get you new cloths</div>
         <div className="oneclick_boxes_container">
           <div className="oneclick_boxes" style={{ background: "#ffb01b" }}>
             <a href="#">
@@ -17,7 +17,7 @@ function OneClick() {
                 className="oneclick_boxes_button"
                 style={{ backgroundColor: "#FFE455" }}
               >
-                Book Now
+                Get Now
               </div>
             </a>
             <div className="oneclick_boxes_image">
@@ -30,7 +30,7 @@ function OneClick() {
                 className="oneclick_boxes_button"
                 style={{ backgroundColor: "#9FC1FF" }}
               >
-                Book Now
+                Get Now
               </div>
             </a>
             <div className="oneclick_boxes_image">
@@ -43,7 +43,7 @@ function OneClick() {
                 className="oneclick_boxes_button"
                 style={{ backgroundColor: "#FF9E9E" }}
               >
-                Book Now
+                Get Now
               </div>
             </a>
             <div className="oneclick_boxes_image">
@@ -56,7 +56,7 @@ function OneClick() {
                 className="oneclick_boxes_button"
                 style={{ backgroundColor: "#F7D9A8" }}
               >
-                Book Now
+                Get Now
               </div>
             </a>
             <div className="oneclick_boxes_image">

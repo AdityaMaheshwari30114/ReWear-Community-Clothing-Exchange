@@ -31,7 +31,7 @@ function ProfessionalLogin() {
     const handleSubmit = async (e) => {
         e.preventDefault();
         const response = await fetch(
-            `${process.env.REACT_APP_BACKEND_API}/api/handyman/login`,
+            `http://localhost:5000/api/handyman/login`,
             {
                 method: "POST",
                 headers: {
@@ -73,7 +73,7 @@ function ProfessionalLogin() {
             />
             <div className="container login_form">
                 <form onSubmit={handleSubmit}>
-                    <div className="login_form_heading">Handyman Login</div>
+                    <div className="login_form_heading">Reseller Login</div>
                     <div className="login_form_input">
                         <input
                             type="email"

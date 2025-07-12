@@ -11,7 +11,7 @@ function ServiceHistory() {
         const intervalId = setInterval(() => {
             const getHandyman = async () => {
                 const response = await fetch(
-                    `${process.env.REACT_APP_BACKEND_API}/api/handyman/gethandyman`,
+                    `http://localhost:5000/api/handyman/gethandyman`,
                     {
                         method: "POST",
                         headers: {
@@ -42,7 +42,7 @@ function ServiceHistory() {
             <div className="container">
                 <div className="serviceHistory">
                     <div className="serviceHistory_heading">
-                        Your History of Work
+                        Your exchange history
                     </div>
 
                     <div className="serviceHistory_info">
@@ -52,7 +52,7 @@ function ServiceHistory() {
                                     <li>Date </li>
                                     <li>Customer</li>
                                     <li>Email</li>
-                                    <li>Work Done</li>
+                                    <li>exchange  Done</li>
                                     <li>Contact Number</li>
                                 </ul>
                             </div>

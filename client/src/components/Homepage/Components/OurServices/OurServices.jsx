@@ -11,18 +11,18 @@ import services_bottom from "./images/services_bottom.png";
 
 function OurServices() {
     const services = [
-        { id: 1, name: "Carpenter", image: service_1 },
-        { id: 2, name: "Maid", image: service_2 },
-        { id: 3, name: "Plumber", image: service_3 },
-        { id: 4, name: "Garbage Collector", image: service_4 },
-        { id: 5, name: "All Rounder", image: service_5 },
-        { id: 6, name: "Electrician", image: service_6 },
+        { id: 1, name: "JEANS", image: service_1 },
+        { id: 2, name: "SHIRT", image: service_2 },
+        { id: 3, name: "TSHIRT", image: service_3 },
+        { id: 4, name: "TROUSERS", image: service_4 },
+        { id: 5, name: "FORMALS", image: service_5 },
+        { id: 6, name: "CASUALS", image: service_6 },
     ];
 
     return (
         <div className="outservices_maincontainer">
             <div className="container ourServices">
-                <div className="ourServices_heading">Our Services</div>
+                <div className="ourServices_heading">Our Rewears</div>
                 <div className="ourServices_services">
                     {services.map((service, index) => (
                         <div className="services_box" key={index}>
@@ -40,7 +40,7 @@ function OurServices() {
 
                 <div className="services_bottom">
                     <div className="services_bottom_heading">
-                        Get a hand for your every need
+                        Get a Rewear
                     </div>
                     <div className="services_bottom_image">
                         <img src={services_bottom} alt="" />

@@ -51,7 +51,7 @@ function ServicePage() {
                             onChange={handleSearchInputChange}
                         />
                     </div>
-                    <p>Available Services</p>
+                    <p>Available Rewears</p>
                     {filteredServices.map(servicesIndividual)}
                 </div>
             </div>

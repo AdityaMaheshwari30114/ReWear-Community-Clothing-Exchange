@@ -37,7 +37,9 @@ function ServicePerson({
     const handleSelect = () => {
         setIsLoading(true);
         setShowCountdown(true);
-        fetch(`${process.env.REACT_APP_BACKEND_API}/api/createnotification`, {
+        console.log("Sending user_id:", user_id);
+
+        fetch(`http://localhost:5000/api/createnotification`, {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",
@@ -56,7 +58,7 @@ function ServicePerson({
                 setIsAccepted(false);
                 const interval = setInterval(() => {
                     fetch(
-                        `${process.env.REACT_APP_BACKEND_API}/api/getnotification`,
+                        `http://localhost:5000/api/getnotification`,
                         {
                             method: "POST",
                             headers: {
@@ -102,7 +104,7 @@ function ServicePerson({
                         Member for {memberSince}
                     </div>
                     <div className="servicePerson_jobsDone">
-                        Completed {jobsCompleted} jobs
+                        done {jobsCompleted} exchanges
                     </div>
                 </div>
             </div>
@@ -122,7 +124,7 @@ function ServicePerson({
                         {showCountdown ? (
                             <button disabled>Request Rejected</button>
                         ) : (
-                            <button onClick={handleSelect}>Select</button>
+                            <button onClick={handleSelect}>Sent request for exchange </button>
                         )}
                     </>
                 )}

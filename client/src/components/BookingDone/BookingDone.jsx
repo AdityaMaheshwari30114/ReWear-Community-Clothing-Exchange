@@ -23,7 +23,7 @@ function BookingDone() {
     useEffect(() => {
         const fetchHandymanDetails = async () => {
             const response = await fetch(
-                `${process.env.REACT_APP_BACKEND_API}/api/handyman/gethandyman`,
+                `/api/handyman/gethandyman`,
                 {
                     method: "POST",
                     headers: {
@@ -112,7 +112,7 @@ function BookingDone() {
                             <img src={profilecircle} alt="" />
                         </div>
                         <div className="booking_summary_info_info">
-                            A handyman has been assigned at your place today{" "}
+                            A exchanger has been assigned at your place today{" "}
                             <br />
                             Our executive will arrive as per schedule <br />
                             An OTP has been sent to your registered Email
@@ -128,25 +128,25 @@ function BookingDone() {
                 </div>
                 <div className="booking_payment">
                     <div className="payment_summary_heading">
-                        Payment Summary
+                        Rewear Summary
                     </div>
                     <div className="payment_summary_bill">
-                        <div className="payment_bill_total">
+                        {/* <div className="payment_bill_total">
                             <div className="payment_text">Service Charges</div>
                             <div className="payment_amount">100</div>
-                        </div>
+                        </div> */}
                         <div className="payment_bill_total">
                             <div className="payment_text">Handyman Charges</div>
                             <div className="payment_amount">{cost}</div>
                         </div>
-                        <div className="payment_bill_total">
+                        {/* <div className="payment_bill_total">
                             <div className="payment_text">GST</div>
                             <div className="payment_amount">{gst}</div>
                         </div>
                         <div className="payment_bill_total">
                             <div className="payment_text">LH Discount</div>
                             <div className="payment_amount">{gst}</div>
-                        </div>
+                        </div> */}
                     </div>
                     <div className="payment_summary_total_amount">
                         <div className="payment_bill_total">

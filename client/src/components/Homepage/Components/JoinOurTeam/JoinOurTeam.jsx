@@ -9,10 +9,10 @@ function JoinOurTeam() {
       <div className="joinourteam_textside">
         <div className="joinourteam_heading">
           Want to join our <br />
-          helping team?
+           team?
         </div>
         <Link to="/handyman/register">
-          <div className="joinourteam_button">Register as professional</div>
+          <div className="joinourteam_button">Register as Seller</div>
         </Link>
       </div>
       <div className="joinourteam_imageside">

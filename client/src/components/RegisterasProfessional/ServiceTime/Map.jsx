@@ -46,28 +46,28 @@ function Map() {
         }
     };
 
-    useEffect(() => {
-        const fetchUserData = async () => {
-            const response = await fetch(
-                `${process.env.REACT_APP_BACKEND_API}/api/user/getuser`,
-                {
-                    method: "POST",
-                    headers: { "Content-Type": "application/json" },
-                    body: JSON.stringify({ user_id }),
-                }
-            );
-            const data = await response.json();
-            setUserData(data);
-        };
-        fetchUserData();
-    }, [user_id]);
+    // useEffect(() => {
+    //     const fetchUserData = async () => {
+    //         const response = await fetch(
+    //             `http://localhost:5000/api/user/getuser`,
+    //             {
+    //                 method: "POST",
+    //                 headers: { "Content-Type": "application/json" },
+    //                 body: JSON.stringify({ user_id }),
+    //             }
+    //         );
+    //         const data = await response.json();
+    //         setUserData(data);
+    //     };
+    //     fetchUserData();
+    // }, [user_id]);
 
-    const handleOpenMaps = () => {
-        if (userData && userData.lat && userData.long) {
-            const url = `https://www.google.com/maps/search/?api=1&query=${userData.lat},${userData.long}`;
-            window.open(url, "_blank");
-        }
-    };
+    // const handleOpenMaps = () => {
+    //     if (userData && userData.lat && userData.long) {
+    //         const url = `https://www.google.com/maps/search/?api=1&query=${userData.lat},${userData.long}`;
+    //         window.open(url, "_blank");
+    //     }
+    // };
 
     const handleSubmit = async (e) => {
         e.preventDefault();
@@ -108,13 +108,13 @@ function Map() {
                     <div className="service_map_image">
                         <img src={map_start_end} alt="" />
                     </div>
-                    <div className="service_map_button">
+                    {/* <div className="service_map_button">
                         <a href="#">
                             <button onClick={handleOpenMaps}>
                                 Click here to open Map
                             </button>
                         </a>
-                    </div>
+                    </div> */}
                 </div>
 
                 <div className="service_otp">

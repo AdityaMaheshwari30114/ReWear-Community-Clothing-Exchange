@@ -18,10 +18,10 @@ function WhyPartner() {
             <img src={info_image1} alt="" />
           </div>
           <div className="whyPartner_info_boxes_heading">
-            Set your own hours
+            resell your own cloths
           </div>
           <div className="whyPartner_info_boxes_content">
-            You decide when and how often you you want to give service.
+            You decide whom you want to sell .
           </div>
         </div>
         <div className="whyPartner_info_boxes">

@@ -35,11 +35,7 @@ function DashboardNavbar() {
                     <nav className="main_nav">
                         <div className="logo">
                             <Link to="/">
-                                <img
-                                    src="/logo.png"
-                                    alt=""
-                                    className="navbar-logo-img"
-                                />
+                               <h1>Rewear</h1> 
                             </Link>
                         </div>
                         <div className="menu_link">

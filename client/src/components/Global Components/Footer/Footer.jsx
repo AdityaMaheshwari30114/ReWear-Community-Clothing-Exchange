@@ -11,12 +11,12 @@ function Footer() {
       <div className="footer_main container">
         <div className="footer_heading">
           Customer service is important to us. <br />
-          Need help? Call- 011 1800 1800 99
+          Need help? Call- 6261138343
         </div>
         <div className="footer_contents">
           <div className="footer_column">
             <div className="footer_column_first_heading_image">
-              <img src="/logo.png" />
+              <h1   >Rewear</h1>
             </div>
             <div className="footer_column_first_image_container">
               <div className="footer_column_images">
