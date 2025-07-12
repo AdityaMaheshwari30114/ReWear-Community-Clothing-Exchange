@@ -1,3 +1,5 @@
+# ReWear – Community Clothing Exchange♻️
+
 ## Overview
 **ReWear** is a web-based platform focused on promoting sustainable fashion by allowing users to exchange unused clothing through direct swaps or a point-based redemption system. The goal is to reduce textile waste and encourage reuse of wearable garments.
 
