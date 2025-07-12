@@ -37,8 +37,6 @@ function ServicePerson({
     const handleSelect = () => {
         setIsLoading(true);
         setShowCountdown(true);
-        console.log("Sending user_id:", user_id);
-
         fetch(`http://localhost:5000/api/createnotification`, {
             method: "POST",
             headers: {
@@ -124,7 +122,7 @@ function ServicePerson({
                         {showCountdown ? (
                             <button disabled>Request Rejected</button>
                         ) : (
-                            <button onClick={handleSelect}>Sent request for exchange </button>
+                            <button onClick={handleSelect}>Sent request </button>
                         )}
                     </>
                 )}

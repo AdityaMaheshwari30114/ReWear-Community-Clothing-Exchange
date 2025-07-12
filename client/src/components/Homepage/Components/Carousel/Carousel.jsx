@@ -1,9 +1,9 @@
 import React from "react";
 import "./Carousel.css";
-import carousel_1 from "./images/carousel_1.png";
-import carousel_2 from "./images/carousel_2.png";
-import carousel_3 from "./images/carousel_3.png";
-import carousel_4 from "./images/carousel_4.png";
+import carousel_1 from "./imgs/sweater.jpg";
+import carousel_2 from "./imgs/pant_1.jpeg";
+import carousel_3 from "./imgs/dress_1.jpg";
+import carousel_4 from "./imgs/dress_1.jpg";
 
 function Carousel() {
     const images = [carousel_1, carousel_2, carousel_3, carousel_4];
@@ -34,11 +34,11 @@ function Carousel() {
                                     index === 0 ? "active" : ""
                                 }`}
                             >
-                                <img
+                                {/* <img
                                     className="d-block w-100"
                                     src={image}
                                     alt={`Slide ${index + 1}`}
-                                />
+                                /> */}
                             </div>
                         ))}
                     </div>

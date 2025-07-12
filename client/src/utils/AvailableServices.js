@@ -1,9 +1,9 @@
-import carpenter from "../components/AvailableServices/images/carpenter.png";
-import electrician from "../components/AvailableServices/images/electrician.png";
-import garbagecollector from "../components/AvailableServices/images/garbagecollector.png";
-import handyman from "../components/AvailableServices/images/handyman.png";
-import maid from "../components/AvailableServices/images/maid.png";
-import plumber from "../components/AvailableServices/images/plumber.png";
+import carpenter from "./imgs/icon_2.png";
+import electrician from "./imgs/icon_1.jpg";
+import garbagecollector from "./imgs/icon_3.png";
+import handyman from "./imgs/icon_4.png";
+import maid from "./imgs/icon_5.png";
+import plumber from "./imgs/icon_6.png";
 
 const availableServices = [
   {

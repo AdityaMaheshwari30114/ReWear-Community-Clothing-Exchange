@@ -1,13 +1,14 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "./OurServices.css";
-import service_1 from "./images/service_1.png";
-import service_2 from "./images/service_2.png";
-import service_3 from "./images/service_3.png";
-import service_4 from "./images/service_4.png";
-import service_5 from "./images/service_5.png";
-import service_6 from "./images/service_6.png";
-import services_bottom from "./images/services_bottom.png";
+import service_1 from "../images/pant2.png";
+import service_2 from "../images/icon_2.png";
+import service_3 from "../images/tshirt_1.webp";
+import service_4 from "../images/icon_2.png";
+import service_5 from "../images/pant_1.jpeg";
+import service_6 from "../images/jacket.jpg";
+// import services_bottom from "../images/bgimage_2.jpg";
+import services_bottom from "../images/jacket.jpg";                        
 
 function OurServices() {
     const services = [
@@ -27,9 +28,9 @@ function OurServices() {
                     {services.map((service, index) => (
                         <div className="services_box" key={index}>
                             <Link to={`/services/servicePage`}>
-                                <div className="services_image">
-                                    <img src={service.image} alt="" />
-                                </div>
+                                {/* <div >
+                                    <img className="services_bottom_image" src={service.image} alt="" />
+                                </div> */}
                                 <div className="service_name">
                                     {service.name}
                                 </div>

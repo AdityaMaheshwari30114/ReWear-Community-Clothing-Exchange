@@ -8,13 +8,13 @@ function Services_Navbar(props) {
                 <div className="navbar-logo">
                     <a href="/">
                         <img
-                            src="/logo.png"
+                            src="/bgimage_1.webp"
                             alt="Pick Your Locals"
                             className="navbar-logo-img"
                         />
                     </a>
                 </div>
-                <div className="navbar-links">
+                <div className="navbar-links mx-5">
                     <span className="navbar-link">
                         {/* to make the first letter capital */}
                         {props.serviceName.charAt(0).toUpperCase() +

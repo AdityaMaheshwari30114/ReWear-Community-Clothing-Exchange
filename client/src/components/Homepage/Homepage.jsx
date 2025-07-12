@@ -11,7 +11,7 @@ function Homepage() {
       <div className="homepage_content">
         <Carousel />
         <OurServices />
-        <OneClick />
+        {/* <OneClick /> */}
         <JoinOurTeam />
       </div>
     </>

@@ -15,9 +15,9 @@ function JoinOurTeam() {
           <div className="joinourteam_button">Register as Seller</div>
         </Link>
       </div>
-      <div className="joinourteam_imageside">
+      {/* <div className="joinourteam_imageside">
         <img src={joinourteam} alt="" />
-      </div>
+      </div> */}
     </div>
   );
 }
